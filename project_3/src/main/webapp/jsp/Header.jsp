@@ -28,7 +28,7 @@
 
 <style type="text/css">
 .aj {
-	background-image: linear-gradient(to bottom right, grey, black);
+	background-image: linear-gradient(to bottom right, red, black);
 }
 </style>
 </head>

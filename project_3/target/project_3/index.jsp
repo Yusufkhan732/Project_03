@@ -11,7 +11,7 @@
 
 body {
 	background-image: url('img/amit.jpg');
-	background-size: cover;
+	background-size: 100%;
 	background-repeat: no-repeat;
 }
 </style>

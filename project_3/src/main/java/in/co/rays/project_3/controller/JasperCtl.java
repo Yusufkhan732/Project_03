@@ -33,6 +33,7 @@ public class JasperCtl extends BaseCtl {
 
 	/**
 	 * 
+	 * <artifactId>jasperreports</artifactId> <version>6.13.0</version>
 	 */
 	private static final long serialVersionUID = 1L;
 
@@ -79,6 +80,7 @@ public class JasperCtl extends BaseCtl {
 			response.getOutputStream().flush();
 
 		} catch (Exception e) {
+			e.printStackTrace();
 
 		}
 	}

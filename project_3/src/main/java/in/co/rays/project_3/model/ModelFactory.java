@@ -8,8 +8,6 @@ import java.util.ResourceBundle;
  * 
  * @author Yusuf Khan
  * 
- * 
- *
  */
 public final class ModelFactory {
 
