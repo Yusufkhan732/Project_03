@@ -28,7 +28,7 @@
 
 <style type="text/css">
 .aj {
-	background-image: linear-gradient(to bottom right, red, black);
+	background-image: linear-gradient(to bottom right, grey, black);
 }
 </style>
 </head>
@@ -200,7 +200,7 @@
 				</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="<%=ORSView.SUBJECT_CTL%>"><i
-							class="fa fa-calculator"></i>Add Subject</a> <a class="dropdown-item"
+							class="fa fa-book"></i>Add Subject</a> <a class="dropdown-item"
 							href="<%=ORSView.SUBJECT_LIST_CTL%>"> <i
 							class="fa fa-sort-amount-down"></i>Subject List
 						</a>
