@@ -45,8 +45,9 @@ public class JasperCtl extends BaseCtl {
 			ResourceBundle rb = ResourceBundle.getBundle("in.co.rays.project_3.bundle.system");
 
 			/* Compilation of jrxml file */
-			JasperReport jasperReport = JasperCompileManager
-					.compileReport(rb.getString(rb.getString("jasperctl")));
+			JasperReport jasperReport =JasperCompileManager
+					   .compileReport("D:\\Project-03\\Project-03\\project_3\\src\\main\\resources\\reports\\p3.jrxml");
+
 
 			HttpSession session = request.getSession(true);
 
