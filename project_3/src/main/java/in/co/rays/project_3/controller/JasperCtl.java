@@ -46,7 +46,7 @@ public class JasperCtl extends BaseCtl {
 
 			/* Compilation of jrxml file */
 			JasperReport jasperReport = JasperCompileManager
-					.compileReport(rb.getString("C:\\Users\\admin\\JaspersoftWorkspace\\MyReports\\test.jrxml"));
+					.compileReport(rb.getString(rb.getString("jasperctl")));
 
 			HttpSession session = request.getSession(true);
 
