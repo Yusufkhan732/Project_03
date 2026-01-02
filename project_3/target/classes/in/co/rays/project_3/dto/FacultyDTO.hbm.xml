@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 10 Jan, 2021 09:00:16 AM by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping package="in.co.rays.project_3.dto">
-	<class name="FacultyDTO" table="ST_FACULTY">
+	<class name="EmployeeDTO" table="ST_FACULTY">
 		<id name="id" type="java.lang.Long">
 			<column name="ID" />
 			<generator class="increment" />
@@ -47,10 +47,12 @@
 		<property name="subjectName" type="java.lang.String">
 			<column name="SUBJECTNAME" />
 		</property>
-		<property name="createdBy" type="java.lang.String" length="50">
+		<property name="createdBy" type="java.lang.String"
+			length="50">
 			<column name="CREATED_BY" />
 		</property>
-		<property name="modifiedBy" type="java.lang.String" length="50">
+		<property name="modifiedBy" type="java.lang.String"
+			length="50">
 			<column name="MODIFIED_BY" />
 		</property>
 		<property name="createdDatetime" type="java.sql.Timestamp">

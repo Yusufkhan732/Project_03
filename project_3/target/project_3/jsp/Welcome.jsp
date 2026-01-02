@@ -8,8 +8,7 @@
 <link rel="stylesheet" href="/resources/demos/style.css">
 <style>
 .p4 {
-	background-image:
-		url('<%=ORSView.APP_CONTEXT%>/img/WallpaperDog-988052.jpg');
+	background-image: url('<%=ORSView.APP_CONTEXT%>/img/circule.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -28,7 +27,7 @@
 	</div>
 	<div class="text-cs1">
 		<center>
-			<h1 style="padding-top: 20%; color: white">
+			<h1 style="padding-top: 20%; color: black;">
 				<b class="cl">" Welcome to online result system "</b>
 			</h1>
 		</center>

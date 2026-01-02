@@ -85,6 +85,22 @@ public final class ModelFactory {
 		return roleModel;
 	}
 
+	public EmployeeModelInt getEmployeeModel() {
+
+		EmployeeModelInt employeeModel = (EmployeeModelInt) modelCache.get("employeeModel");
+		if (employeeModel == null) {
+			if ("Hibernate".equals(DATABASE)) {
+				employeeModel = new EmployeeModelHibImpl();
+			}
+			if ("JDBC".equals(DATABASE)) {
+				employeeModel = new EmployeeModelJDBCImpl();
+			}
+			modelCache.put("employeeModel", employeeModel);
+		}
+
+		return employeeModel;
+	}
+
 	public UserModelInt getUserModel() {
 
 		UserModelInt userModel = (UserModelInt) modelCache.get("userModel");

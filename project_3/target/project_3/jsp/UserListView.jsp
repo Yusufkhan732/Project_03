@@ -1,4 +1,3 @@
-
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
 <%@page import="in.co.rays.project_3.model.ModelFactory"%>
@@ -21,13 +20,12 @@
 <style>
 .hm {
 	background-image: url('<%=ORSView.APP_CONTEXT%>/img/al.jpg');
-	
 	background-repeat: no-repeat;
-	background-attachment: fixed; 
+	background-attachment: fixed;
 	background-size: cover;
 	padding-top: 85px;
-	
-    /*  background-size: 100%; */
+
+	/*  background-size: 100%; */
 }
 
 .p1 {
@@ -185,7 +183,7 @@
 					<td><input type="submit" name="operation"
 						class="btn btn-warning btn-md" style="font-size: 17px"
 						value="<%=UserListCtl.OP_PREVIOUS%>"
-						<%=pageNo > 1 ? "" : "disabled"%>></td>
+						<%=pageNo == 1 ? "disabled" : ""%>></td>
 					<td><input type="submit" name="operation"
 						class="btn btn-primary btn-md" style="font-size: 17px"
 						value="<%=UserListCtl.OP_NEW%>"></td>

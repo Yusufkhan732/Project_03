@@ -81,6 +81,8 @@ public abstract class BaseCtl extends HttpServlet{
     	HttpSession session=request.getSession();
 
     	UserDTO userDto=(UserDTO) session.getAttribute("user");
+    	
+    	System.out.println("User " +userDto);
 
     	if(userDto==null){
     	createdBy="root";
