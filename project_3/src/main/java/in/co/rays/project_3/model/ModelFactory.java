@@ -193,4 +193,19 @@ public final class ModelFactory {
 
 		return facultyModel;
 	}
+
+	public DoctorModelInt getDoctorModel() {
+		DoctorModelInt doctorModel = (DoctorModelInt) modelCache.get("doctorModel");
+		if (doctorModel == null) {
+			if ("Hibernate".equals(DATABASE)) {
+				doctorModel = new DoctorModelHibImpl();
+			}
+			if ("JDBC".equals(DATABASE)) {
+				doctorModel = new DoctorModelJDBCImpl();
+			}
+			modelCache.put("doctorModel", doctorModel);
+		}
+
+		return doctorModel;
+	}
 }
