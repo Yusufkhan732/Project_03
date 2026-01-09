@@ -18,6 +18,7 @@ in\co\rays\project_3\model\SubjectModelHibImp.class
 in\co\rays\project_3\controller\EmployeeListCtl.class
 in\co\rays\project_3\model\TimetableModelJDBCImpl.class
 in\co\rays\project_3\exception\DatabaseException.class
+in\co\rays\project_3\controller\DoctorCtl.class
 in\co\rays\project_3\model\EmployeeModelInt.class
 in\co\rays\project_3\util\HibDataSource.class
 in\co\rays\project_3\test\FacultyModelTest.class
@@ -52,12 +53,15 @@ in\co\rays\project_3\model\FacultyModelInt.class
 in\co\rays\project_3\dto\EmployeeDTO.class
 in\co\rays\project_3\model\FacultyModelJDBCImpl.class
 in\co\rays\project_3\controller\CourseCtl.class
+in\co\rays\project_3\model\DoctorModelJDBCImpl.class
+in\co\rays\project_3\controller\DoctorListCtl.class
 in\co\rays\project_3\controller\RoleListCtl.class
 in\co\rays\project_3\model\EmployeeModelJDBCImpl.class
 in\co\rays\project_3\controller\MarksheetCtl.class
 in\co\rays\project_3\controller\EmployeeCtl.class
 in\co\rays\project_3\test\TimetableTest.class
 in\co\rays\project_3\model\SubjectModelInt.class
+in\co\rays\project_3\model\DoctorModelInt.class
 in\co\rays\project_3\controller\FacultyListCtl.class
 in\co\rays\project_3\util\DataUtility.class
 in\co\rays\project_3\model\UserModelHibImp.class
@@ -65,6 +69,7 @@ in\co\rays\project_3\util\PropertyReader.class
 in\co\rays\project_3\model\UserModelInt.class
 in\co\rays\project_3\controller\UserCtl.class
 in\co\rays\project_3\model\RoleModelJDBCImpl.class
+in\co\rays\project_3\dto\DoctorDTO.class
 in\co\rays\project_3\model\RoleModelInt.class
 in\co\rays\project_3\test\UserModelTest.class
 in\co\rays\project_3\controller\MarksheetListCtl.class
@@ -89,6 +94,7 @@ in\co\rays\project_3\util\EmailUtility.class
 in\co\rays\project_3\controller\RoleCtl.class
 in\co\rays\project_3\model\ProductModelHibImp.class
 in\co\rays\project_3\controller\UserRegistrationCtl.class
+in\co\rays\project_3\model\DoctorModelHibImpl.class
 in\co\rays\project_3\controller\WelcomeCtl.class
 in\co\rays\project_3\controller\JasperCtl.class
 in\co\rays\project_3\controller\CollegeListCtl.class

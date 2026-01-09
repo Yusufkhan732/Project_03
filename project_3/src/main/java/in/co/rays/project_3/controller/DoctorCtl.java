@@ -130,7 +130,8 @@ public class DoctorCtl extends BaseCtl {
 		dto.setName(DataUtility.getString(request.getParameter("name")));
 		dto.setDob(DataUtility.getDate(request.getParameter("dob")));
 		dto.setMobile(DataUtility.getString(request.getParameter("mobile")));
-		dto.setExperties(DataUtility.getString(request.getParameter("experties")));
+		dto.setExperties(DataUtility.getString(request.getParameter("experties")).trim());
+
 		populateBean(dto, request);
 		return dto;
 	}

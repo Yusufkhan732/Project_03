@@ -227,6 +227,15 @@
 							href="<%=ORSView.EMPLOYEE_LIST_CTL%>"><i
 							class="fa fa-id-badge"></i>Employee List</a>
 					</div></li>
+				<li class="nav-item dropdown px-1"><a
+					class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+					style="color: white;">Doctor</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="<%=ORSView.DOCTOR_CTL%>"><i
+							class="fa fa-user-plus mr-2"></i>Add Doctor</a> <a
+							class="dropdown-item" href="<%=ORSView.DOCTOR_LIST_CTL%>"><i
+							class="fa fa-list mr-2"></i>Doctor List</a>
+					</div></li>
 				<%
 					}
 					}

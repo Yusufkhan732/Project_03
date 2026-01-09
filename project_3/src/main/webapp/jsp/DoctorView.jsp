@@ -105,7 +105,7 @@ html, body {
 								<h5 class="text-center text-success font-weight-bold mb-3">
 									<%
 										long id = DataUtility.getLong(request.getParameter("id"));
-										if (dto != null && id > 0) {
+										if (dto.getId() != null && dto.getId()> 0) {
 									%>Update<%
 										} else {
 									%>Add<%

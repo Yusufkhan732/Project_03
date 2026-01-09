@@ -44,18 +44,13 @@ public class DoctorDTO extends BaseDTO {
 	@Override
 	public String getKey() {
 		// TODO Auto-generated method stub
-		return id + "";
+		return experties;
 	}
 
 	@Override
 	public String getValue() {
 		// TODO Auto-generated method stub
 		return experties;
-	}
-
-	@Override
-	public String toString() {
-		return "DockerDTO [name=" + name + ", dob=" + dob + ", mobile=" + mobile + ", experties=" + experties + "]";
 	}
 
 }

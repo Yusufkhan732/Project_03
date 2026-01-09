@@ -1,5 +1,6 @@
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\dto\BaseDTO.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\model\CollegeModelInt.java
+D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\model\DoctorModelInt.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\test\StudentModelTest.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\dto\RoleDTO.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller\ORSView.java
@@ -16,6 +17,7 @@ D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\model\Empl
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\dto\SubjectDTO.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\util\ServletUtility.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller\ForgetPasswordCtl.java
+D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller\DoctorListCtl.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\util\HibDataSource.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller\ProductCtl.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller\CourseCtl.java
@@ -46,6 +48,7 @@ D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller\RoleListCtl.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\util\HTMLUtility.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\model\FacultyModelJDBCImpl.java
+D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\model\DoctorModelJDBCImpl.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller\ErrorCtl.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller\LoginCtl.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller\CourseListCtl.java
@@ -73,6 +76,7 @@ D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\test\CourseModelTest.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\model\TimetableModelInt.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller\JasperCtl.java
+D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller\DoctorCtl.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\model\ProductModelInt.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller\RoleCtl.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\model\CourseModelHibImp.java
@@ -92,6 +96,7 @@ D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\model\TimetableModelHibImp.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\test\CollegeModelTest.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\util\PropertyReader.java
+D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\dto\DoctorDTO.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller\BaseCtl.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\util\EmailBuilder.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\model\StudentModelHibImp.java
@@ -102,3 +107,4 @@ D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\controller
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\exception\DuplicateRecordException.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\util\EmailUtility.java
 D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\util\DataUtility.java
+D:\Project-03\Project-03\project_3\src\main\java\in\co\rays\project_3\model\DoctorModelHibImpl.java
