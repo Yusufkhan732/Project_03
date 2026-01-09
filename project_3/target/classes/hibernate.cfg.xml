@@ -7,8 +7,13 @@
 	<!-- <artifactId>hibernate-core</artifactId> <version>3.6.10.Final</version> -->
 	<session-factory>
 		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+<<<<<<< HEAD
 <!-- 		<property name="hibernate.connection.url">jdbc:mysql://mysql:3306/project3</property> -->
 		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/project3</property>
+=======
+		 <property name="hibernate.connection.url">jdbc:mysql://mysql:3306/project3</property> 
+		
+>>>>>>> f0fa088cf0914c634f4ba6f5e29b0df7272bc23a
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">root</property>
 
