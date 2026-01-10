@@ -61,8 +61,7 @@ public class ServletUtility {
 			throws IOException, ServletException {
 
 		request.setAttribute("exception", e);
-		RequestDispatcher rd = request.getRequestDispatcher(ORSView.ERROR_CTL);
-		rd.forward(request, response);
+		response.sendRedirect(ORSView.ERROR_CTL);
 	}
 
 	/**

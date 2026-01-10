@@ -159,14 +159,21 @@ public class LoginCtl extends BaseCtl {
 					ServletUtility.setDto(dto, request);
 					ServletUtility.setErrorMessage("Invalid LoginId And Password!", request);
 				}
-
 			} catch (ApplicationException e) {
 				log.error(e);
-				ServletUtility.handleException(e, request, response);
+				ServletUtility.setErrorMessage("Data Base Server is down Try After some time.....", request);
+				ServletUtility.forward(getView(), request, response);
+
 				return;
+
+//				// Baaki unknown errors
+//				ServletUtility.handleException(e, request, response);
+//				return;
 			}
 
-		} else if (OP_SIGN_UP.equalsIgnoreCase(op)) {
+		} else if (OP_SIGN_UP.equalsIgnoreCase(op))
+
+		{
 
 			ServletUtility.redirect(ORSView.USER_REGISTRATION_CTL, request, response);
 			return;
