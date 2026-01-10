@@ -1,4 +1,4 @@
- <%@page import="in.co.rays.project_3.controller.ORSView"%>
+<%@page import="in.co.rays.project_3.controller.ORSView"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ page isErrorPage="true"%>
@@ -34,4 +34,4 @@
 	</h4>
 
 </body>
-</html> 
+</html>

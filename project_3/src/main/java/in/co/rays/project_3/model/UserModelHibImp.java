@@ -249,17 +249,35 @@ public class UserModelHibImp implements UserModelInt {
 		System.out.println(login + "kkkkk" + password);
 		Session session = null;
 		UserDTO dto = null;
-		session = HibDataSource.getSession();
-		Query q = session.createQuery("from UserDTO where login=? and password=?");
-		q.setString(0, login);
-		q.setString(1, password);
-		List list = q.list();
-		if (list.size() > 0) {
-			dto = (UserDTO) list.get(0);
-		} else {
-			dto = null;
+		try {
 
+			session = HibDataSource.getSession();
+
+			Query q = session.createQuery("from UserDTO where login=? and password=?");
+
+			q.setString(0, login);
+			q.setString(1, password);
+
+			List list = q.list();
+
+			if (list.size() > 0) {
+				dto = (UserDTO) list.get(0);
+			}
+
+		} catch (HibernateException e) {
+
+			System.out.println(" Database connection problem");
+			e.printStackTrace();
+
+			throw new ApplicationException("Database is not available");
+
+		} finally {
+
+			if (session != null) {
+				session.close();
+			}
 		}
+
 		return dto;
 	}
 

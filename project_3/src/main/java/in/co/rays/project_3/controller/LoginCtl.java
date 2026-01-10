@@ -166,14 +166,14 @@ public class LoginCtl extends BaseCtl {
 
 				return;
 
-//				// Baaki unknown errors
+			}
+//			} catch (ApplicationException e) {
+//				log.error(e);
 //				ServletUtility.handleException(e, request, response);
 //				return;
-			}
+//			}
 
-		} else if (OP_SIGN_UP.equalsIgnoreCase(op))
-
-		{
+		} else if (OP_SIGN_UP.equalsIgnoreCase(op)) {
 
 			ServletUtility.redirect(ORSView.USER_REGISTRATION_CTL, request, response);
 			return;
