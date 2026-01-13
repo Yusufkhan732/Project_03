@@ -1,9 +1,11 @@
 in\co\rays\project_3\model\SubjectModelJDBCImpl.class
 in\co\rays\project_3\model\CourseModelInt.class
+in\co\rays\project_3\controller\PatientCtl.class
 in\co\rays\project_3\dto\BaseDTO.class
 in\co\rays\project_3\dto\CourseDTO.class
 in\co\rays\project_3\util\EmailBuilder.class
 in\co\rays\project_3\model\TimetableModelInt.class
+in\co\rays\project_3\controller\PatientListCtl.class
 in\co\rays\project_3\dto\SubjectDTO.class
 in\co\rays\project_3\controller\GetMarksheetCtl.class
 in\co\rays\project_3\controller\SubjectListCtl.class
@@ -22,9 +24,12 @@ in\co\rays\project_3\controller\DoctorCtl.class
 in\co\rays\project_3\model\EmployeeModelInt.class
 in\co\rays\project_3\util\HibDataSource.class
 in\co\rays\project_3\test\FacultyModelTest.class
+in\co\rays\project_3\model\PatientModelHibImpl.class
 in\co\rays\project_3\dto\RoleDTO.class
+in\co\rays\project_3\model\PatientModelInt.class
 in\co\rays\project_3\model\MarksheetModelJDBCImpl.class
 in\co\rays\project_3\controller\SubjectCtl.class
+in\co\rays\project_3\dto\PatientDTO.class
 in\co\rays\project_3\dto\UserDTO.class
 in\co\rays\project_3\test\CollegeModelTest.class
 in\co\rays\project_3\exception\DuplicateRecordException.class

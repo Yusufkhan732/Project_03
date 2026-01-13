@@ -218,7 +218,7 @@
 							List</a>
 					</div></li> --%>
 
-				<li class="nav-item dropdown"><a
+				<%-- <li class="nav-item dropdown"><a
 					class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
 					style="color: white;">Employee</a>
 					<div class="dropdown-menu">
@@ -226,8 +226,8 @@
 							class="fa fa-user-plus"></i>Add Employee</a> <a class="dropdown-item"
 							href="<%=ORSView.EMPLOYEE_LIST_CTL%>"><i
 							class="fa fa-id-badge"></i>Employee List</a>
-					</div></li>
-				<li class="nav-item dropdown px-1"><a
+					</div></li> --%>
+				<%-- <li class="nav-item dropdown px-1"><a
 					class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
 					style="color: white;">Doctor</a>
 					<div class="dropdown-menu">
@@ -235,6 +235,15 @@
 							class="fa fa-user-plus mr-2"></i>Add Doctor</a> <a
 							class="dropdown-item" href="<%=ORSView.DOCTOR_LIST_CTL%>"><i
 							class="fa fa-list mr-2"></i>Doctor List</a>
+					</div></li> --%>
+				<li class="nav-item dropdown px-1"><a
+					class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+					style="color: white;">Patient</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="<%=ORSView.PATIENT_CTL%>"><i
+							class="fa fa-user-plus mr-2"></i>Add Patient</a> <a
+							class="dropdown-item" href="<%=ORSView.PATIENT_LIST_CTL%>"><i
+							class="fa fa-list mr-2"></i>Patient List</a>
 					</div></li>
 				<%
 					}

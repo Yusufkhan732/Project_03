@@ -7,7 +7,7 @@
 	<!-- <artifactId>hibernate-core</artifactId> <version>3.6.10.Final</version> -->
 	<session-factory>
 		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-<!-- 		<property name="hibernate.connection.url">jdbc:mysql://mysql:3306/project3</property> -->
+		<!-- <property name="hibernate.connection.url">jdbc:mysql://mysql:3306/project3</property> -->
 		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/project3</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">root</property>
@@ -15,9 +15,8 @@
 
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
-		<property name="hbm2ddl.auto">update</property>
-		<property name="show_sql">true</property>
-
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.show_sql">true</property>
 
 		<!--first level cache Performance improve karta hai,Data ko memory me store 
 			karta hai -->
@@ -56,5 +55,7 @@
 		<mapping
 			resource="in/co/rays/project_3/hbm/EmployeeDTO.hbm.xml" />
 		<mapping resource="in/co/rays/project_3/hbm/DoctorDTO.hbm.xml" />
+		<mapping
+			resource="in/co/rays/project_3/hbm/PatientDTO.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>

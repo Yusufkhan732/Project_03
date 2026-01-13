@@ -143,4 +143,10 @@ public interface ORSView {
 	public String DOCTOR_CTL = APP_CONTEXT + "/ctl/DoctorCtl";
 	public String DOCTOR_LIST_CTL = APP_CONTEXT + "/ctl/DoctorListCtl";
 
+	public String PATIENT_CTL = APP_CONTEXT + "/ctl/PatientCtl";
+	public String PATIENT_VIEW = PAGE_FOLDER + "/PatientView.jsp";
+
+	public String PATIENT_LIST_CTL = APP_CONTEXT + "/ctl/PatientListCtl";
+	public String PATIENT_LIST_VIEW = PAGE_FOLDER + "/PatientListView.jsp";
+
 }

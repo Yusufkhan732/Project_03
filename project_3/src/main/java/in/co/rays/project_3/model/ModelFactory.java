@@ -27,6 +27,20 @@ public final class ModelFactory {
 		return mFactory;
 	}
 
+	public PatientModelInt getPatientModel() {
+		PatientModelInt patientModel = (PatientModelInt) modelCache.get("patientModel");
+		if (patientModel == null) {
+			if ("Hibernate".equals(DATABASE)) {
+				patientModel = new PatientModelHibImpl();
+			}
+			if ("JDBC".equals(DATABASE)) {
+				patientModel = new PatientModelHibImpl();
+			}
+			modelCache.put("patientModel", patientModel);
+		}
+		return patientModel;
+	}
+
 	public ProductModelInt getProductModel() {
 		ProductModelInt productModel = (ProductModelInt) modelCache.get("productModel");
 		if (productModel == null) {
