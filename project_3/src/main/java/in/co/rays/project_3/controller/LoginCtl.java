@@ -161,17 +161,10 @@ public class LoginCtl extends BaseCtl {
 				}
 			} catch (ApplicationException e) {
 				log.error(e);
-				ServletUtility.setErrorMessage("Data Base Server is down Try After some time.....", request);
+				ServletUtility.setErrorMessage(e.getMessage(), request);
 				ServletUtility.forward(getView(), request, response);
-
 				return;
-
 			}
-//			} catch (ApplicationException e) {
-//				log.error(e);
-//				ServletUtility.handleException(e, request, response);
-//				return;
-//			}
 
 		} else if (OP_SIGN_UP.equalsIgnoreCase(op)) {
 

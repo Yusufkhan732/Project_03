@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 
 import in.co.rays.project_3.dto.BaseDTO;
 import in.co.rays.project_3.dto.PatientDTO;
+import in.co.rays.project_3.exception.ApplicationException;
 import in.co.rays.project_3.model.ModelFactory;
 import in.co.rays.project_3.model.PatientModelInt;
 import in.co.rays.project_3.util.DataUtility;
@@ -184,17 +185,47 @@ public class PatientCtl extends BaseCtl {
 		if (OP_SAVE.equalsIgnoreCase(op)) {
 
 			log.info("Patient save operation started");
+
 			PatientDTO dto = (PatientDTO) populateDTO(request);
-			model.add(dto);
-			ServletUtility.setSuccessMessage("Patient Successfully Saved", request);
+
+			try {
+				model.add(dto);
+				ServletUtility.setDto(dto, request);
+				ServletUtility.setSuccessMessage("Patient Successfully Saved", request);
+			} catch (ApplicationException e) {
+				log.error("Database error while saving patient", e);
+				ServletUtility.setErrorMessage(e.getMessage(), request); // message from handleException
+				ServletUtility.forward(getView(), request, response);
+				return;
+			} catch (Exception e) {
+				log.error("Unexpected error while saving patient", e);
+				ServletUtility.setErrorMessage("Database Server is down. Please try after some time", request);
+				ServletUtility.forward(getView(), request, response);
+				return;
+			}
 
 		} else if (OP_UPDATE.equalsIgnoreCase(op)) {
 
 			log.info("Patient update operation started");
+
 			PatientDTO dto = (PatientDTO) populateDTO(request);
-			model.update(dto);
-			ServletUtility.setSuccessMessage("Patient Updated Successfully", request);
-			ServletUtility.setDto(dto, request);
+
+			try {
+				model.update(dto);
+				ServletUtility.setDto(dto, request);
+				ServletUtility.setSuccessMessage("Patient Successfully Updated", request);
+			} catch (ApplicationException e) {
+				log.error("Database error while saving patient", e);
+				ServletUtility.setErrorMessage(e.getMessage(), request); // message from handleException
+				ServletUtility.forward(getView(), request, response);
+				return;
+			} catch (Exception e) {
+				log.error("Unexpected error while saving patient", e);
+				ServletUtility.setErrorMessage("Database Server is down. Please try after some time", request);
+				ServletUtility.forward(getView(), request, response);
+				return;
+
+			}
 
 		} else if (OP_CANCEL.equalsIgnoreCase(op)) {
 

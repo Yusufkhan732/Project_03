@@ -21,11 +21,11 @@ i.css {
 .p4 {
 	background-image: url('<%=ORSView.APP_CONTEXT%>/img/user1.jpg');
 	background-repeat: no-repeat;
-	background-attachment: fixed; 
+	background-attachment: fixed;
 	background-size: cover;
 	padding-top: 75px;
-	
-	/* background-size: 100%; */ 
+
+	/* background-size: 100%; */
 }
 </style>
 </head>
@@ -49,7 +49,7 @@ i.css {
 							<%
 								long id = DataUtility.getLong(request.getParameter("id"));
 
-								if (dto.getId() != null) {
+								if (id > 0) {
 							%>
 							<h3 class="text-center text-primary">Update College</h3>
 							<%

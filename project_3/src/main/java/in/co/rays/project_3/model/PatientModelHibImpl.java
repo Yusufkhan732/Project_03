@@ -11,6 +11,7 @@ import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 
 import in.co.rays.project_3.dto.PatientDTO;
+import in.co.rays.project_3.exception.ApplicationException;
 import in.co.rays.project_3.util.HibDataSource;
 
 /**
@@ -32,9 +33,10 @@ public class PatientModelHibImpl implements PatientModelInt {
 	 *
 	 * @param dto PatientDTO
 	 * @return generated primary key
+	 * @throws ApplicationException
 	 */
 	@Override
-	public long add(PatientDTO dto) {
+	public long add(PatientDTO dto) throws ApplicationException {
 
 		log.info("PatientModel add started");
 
@@ -52,6 +54,7 @@ public class PatientModelHibImpl implements PatientModelInt {
 				tx.rollback();
 			}
 			log.error("Error while adding Patient", e);
+			HibDataSource.handleException(e);
 		} finally {
 			session.close();
 		}
@@ -82,6 +85,7 @@ public class PatientModelHibImpl implements PatientModelInt {
 				tx.rollback();
 			}
 			log.error("Error while deleting Patient", e);
+
 		} finally {
 			session.close();
 		}
@@ -91,8 +95,9 @@ public class PatientModelHibImpl implements PatientModelInt {
 	 * Updates existing Patient record.
 	 *
 	 * @param dto PatientDTO
+	 * @throws ApplicationException
 	 */
-	public void update(PatientDTO dto) {
+	public void update(PatientDTO dto) throws ApplicationException {
 
 		log.info("PatientModel update started");
 
@@ -111,6 +116,7 @@ public class PatientModelHibImpl implements PatientModelInt {
 				tx.rollback();
 			}
 			log.error("Error while updating Patient", e);
+			HibDataSource.handleException(e);
 		} finally {
 			session.close();
 		}
@@ -146,6 +152,7 @@ public class PatientModelHibImpl implements PatientModelInt {
 	 *
 	 * @param dto PatientDTO
 	 * @return list of PatientDTO
+	 * @throws ApplicationException
 	 */
 	@Override
 	public List search(PatientDTO dto) {
@@ -159,6 +166,7 @@ public class PatientModelHibImpl implements PatientModelInt {
 	 * @param pageNo   page number
 	 * @param pageSize page size
 	 * @return list of PatientDTO
+	 * @throws ApplicationException
 	 */
 	@Override
 	public List search(PatientDTO dto, int pageNo, int pageSize) {
@@ -202,6 +210,7 @@ public class PatientModelHibImpl implements PatientModelInt {
 
 		} catch (HibernateException e) {
 			log.error("Error while searching Patient", e);
+
 		} finally {
 			session.close();
 		}

@@ -20,10 +20,10 @@
 .hm {
 	background-image: url('<%=ORSView.APP_CONTEXT%>/img/user1.jpg');
 	background-repeat: no-repeat;
-	background-attachment: fixed; 
+	background-attachment: fixed;
 	background-size: cover;
 	padding-top: 70px;
-	
+
 	/* background-size: 100%; */
 }
 
@@ -64,7 +64,7 @@ i.css {
 							<%
 								long id = DataUtility.getLong(request.getParameter("id"));
 
-								if (dto.getId() != null) {
+								if (id > 0) {
 							%>
 							<h3 class="text-center default-text text-primary">Update
 								Marksheet</h3>
@@ -209,7 +209,7 @@ i.css {
 							</div>
 							</br>
 							<%
-								if (dto.getId()!=null) {
+								if (dto.getId() != null) {
 							%>
 
 							<div class="text-center">

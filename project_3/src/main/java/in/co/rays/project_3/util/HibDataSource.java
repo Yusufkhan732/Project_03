@@ -2,9 +2,12 @@ package in.co.rays.project_3.util;
 
 import java.util.ResourceBundle;
 
+import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+
+import in.co.rays.project_3.exception.ApplicationException;
 
 /**
  * Hibernate DataSource is provides the object of session factory and session
@@ -46,4 +49,11 @@ public class HibDataSource {
 			session.close();
 		}
 	}
+
+	public static void handleException(Exception e) throws ApplicationException {
+
+		// DB down / connection issue
+		throw new ApplicationException("Database Server is down. Please try after some time");
+	}
+
 }
