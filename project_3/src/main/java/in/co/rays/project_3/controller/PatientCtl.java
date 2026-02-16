@@ -161,7 +161,7 @@ public class PatientCtl extends BaseCtl {
 
 		PatientModelInt model = ModelFactory.getInstance().getPatientModel();
 
-		if (id > 0 || op != null) {
+		if (id > 0) {
 			PatientDTO dto = model.findByPK(id);
 			ServletUtility.setDto(dto, request);
 			log.info("Patient data loaded for ID : " + id);
@@ -193,13 +193,8 @@ public class PatientCtl extends BaseCtl {
 				ServletUtility.setDto(dto, request);
 				ServletUtility.setSuccessMessage("Patient Successfully Saved", request);
 			} catch (ApplicationException e) {
-				log.error("Database error while saving patient", e);
-				ServletUtility.setErrorMessage(e.getMessage(), request); // message from handleException
-				ServletUtility.forward(getView(), request, response);
-				return;
-			} catch (Exception e) {
 				log.error("Unexpected error while saving patient", e);
-				ServletUtility.setErrorMessage("Database Server is down. Please try after some time", request);
+				ServletUtility.setErrorMessage(e.getMessage(), request);
 				ServletUtility.forward(getView(), request, response);
 				return;
 			}
@@ -219,12 +214,6 @@ public class PatientCtl extends BaseCtl {
 				ServletUtility.setErrorMessage(e.getMessage(), request); // message from handleException
 				ServletUtility.forward(getView(), request, response);
 				return;
-			} catch (Exception e) {
-				log.error("Unexpected error while saving patient", e);
-				ServletUtility.setErrorMessage("Database Server is down. Please try after some time", request);
-				ServletUtility.forward(getView(), request, response);
-				return;
-
 			}
 
 		} else if (OP_CANCEL.equalsIgnoreCase(op)) {

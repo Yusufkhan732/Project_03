@@ -44,14 +44,12 @@ public class JasperCtl extends BaseCtl {
 		try {
 
 			ResourceBundle rb = ResourceBundle.getBundle("in.co.rays.project_3.bundle.system");
-
-			InputStream jrxmlStream = getClass().getClassLoader().getResourceAsStream("reports/project03.jrxml");
-
-			JasperReport jasperReport = JasperCompileManager.compileReport(jrxmlStream);
 //
-//			/* Compilation of jrxml file */
-//			JasperReport jasperReport =JasperCompileManager
-//					   .compileReport("D:\\Project-03\\Project-03\\project_3\\src\\main\\resources\\reports\\p3.jrxml");
+//			InputStream jrxmlStream = getClass().getClassLoader().getResourceAsStream("reports/project03.jrxml");
+//			JasperReport jasperReport = JasperCompileManager.compileReport(jrxmlStream);
+
+			/* Compilation of jrxml file */
+			JasperReport jasperReport = JasperCompileManager.compileReport(rb.getString("jasperctl"));
 
 			HttpSession session = request.getSession(true);
 

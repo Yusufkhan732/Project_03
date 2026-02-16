@@ -22,7 +22,7 @@ body {
 		</h1>
 		<h1 align="Center">
 			<a href="<%=ORSView.WELCOME_CTL%>" style="color: white;"> <font
-				size="8px">Online Result System Yusuf khan</font></a>
+				size="8px">Online Result System</font></a>
 		</h1>
 	</div>
 </body>

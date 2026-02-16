@@ -2,7 +2,6 @@ package in.co.rays.project_3.util;
 
 import java.util.ResourceBundle;
 
-import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -53,7 +52,7 @@ public class HibDataSource {
 	public static void handleException(Exception e) throws ApplicationException {
 
 		// DB down / connection issue
-		throw new ApplicationException("Database Server is down. Please try after some time");
+		throw new ApplicationException("Database Server is down. Please try after some time...");
 	}
 
 }

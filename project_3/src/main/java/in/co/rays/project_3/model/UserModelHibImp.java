@@ -271,8 +271,8 @@ public class UserModelHibImp implements UserModelInt {
 
 			System.out.println(" Database connection problem");
 			e.printStackTrace();
-
-			throw new ApplicationException("Data Base Server is down Try After some time.....");
+			HibDataSource.handleException(e);
+			throw new ApplicationException("Exception is authenticate");
 
 		} finally {
 
