@@ -55,6 +55,24 @@ public final class ModelFactory {
 		return productModel;
 	}
 
+	public ControlModelInt getControlModel() {
+
+		ControlModelInt controlModel = (ControlModelInt) modelCache.get("controlModel");
+
+		if (controlModel == null) {
+
+			if ("Hibernate".equals(DATABASE)) {
+				controlModel = new ControlModelHibImpl();
+			} else if ("JDBC".equals(DATABASE)) {
+				controlModel = new ControlModelJDBCImpl(); // agar banaya hai to
+			}
+
+			modelCache.put("controlModel", controlModel);
+		}
+
+		return controlModel;
+	}
+
 	public MarksheetModelInt getMarksheetModel() {
 		MarksheetModelInt marksheetModel = (MarksheetModelInt) modelCache.get("marksheetModel");
 		if (marksheetModel == null) {

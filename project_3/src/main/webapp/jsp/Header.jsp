@@ -245,6 +245,15 @@
 							class="dropdown-item" href="<%=ORSView.PATIENT_LIST_CTL%>"><i
 							class="fa fa-list mr-2"></i>Patient List</a>
 					</div></li>
+				<%-- <li class="nav-item dropdown px-1"><a
+					class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+					style="color: white;">Control</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="<%=ORSView.CONTROL_CTL%>"><i
+							class="fa fa-user-plus mr-2"></i>Add Control</a> <a
+							class="dropdown-item" href="<%=ORSView.CONTROL_LIST_CTL%>"><i
+							class="fa fa-list mr-2"></i>Control List</a>
+					</div></li> --%>
 				<%
 					}
 					}
