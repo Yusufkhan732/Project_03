@@ -67,7 +67,7 @@
 				<textFieldExpression><![CDATA["Merit Marksheet Record"]]></textFieldExpression>
 			</textField>
 			<textField pattern="MMMMM dd, yyyy">
-				<reportElement x="-20" y="-20" width="100" height="30" uuid="b26e8dac-6ddd-4b2c-bb5b-9f99cc4c7ac7"/>
+				<reportElement x="-20" y="-10" width="100" height="20" uuid="3f5392ed-acbd-4584-a353-89e1d4bfce0a"/>
 				<textElement>
 					<font isBold="true"/>
 				</textElement>
